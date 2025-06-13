@@ -1,0 +1,20 @@
+// theme.js
+import { Dimensions, Platform } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
+
+export const theme = {
+  width,
+  height,
+  isAndroid: Platform.OS === 'android',
+  isIOS: Platform.OS === 'ios',
+  colors: {
+    primary: '#6200EE',
+    background: '#F2F2F2',
+    text: '#333',
+  },
+  fontSizes: {
+    h1: 24,
+    body: 16,
+  },
+};
